@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: cursive;
+
 }
 
 ul {
@@ -57,7 +57,7 @@ h2 {
 .sweets {
   position: relative;
   top: 0px;
-  background-color: cadetblue;
+   background-color: rgb(185, 189, 189);
   width: 100%;
   height: auto;
 }
