@@ -8,31 +8,37 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
   <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css" />
-
   <script defer src="bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
   <script defer src="main.js"></script>
+  <link rel="shortcut icon" href="imgs/p9.jpg" type="image/x-icon">
 </head>
 
 <body>
   <!--nav -->
-  <nav class="navbar navbar-expand-lg  py-3">
+
+  <nav class="navbar navbar-expand-lg py-3">
     <div class="container-fluid">
-      <a class="nav <a class="navbar-brand fw-bold text-dark" href="#"> <span class="fs-2 text-danger ">Nice</span> Cafe</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <a class="navbar-brand fw-bold text-light" href="#">
+        <span class="fs-2">Nice</span> Cafe</a>
 
-      <div class="collapse navbar-collapse mt-5 mt-lg-0" id="navbarSupportedContent">
-        <ul class="navbar-nav mt-5 mt-lg-0 z-3 position-absolute py-2">
-          <a class="nav-link active text-light fs-4 fw-bold" aria-current="page" href="#">Home</a>
-          <a class="nav-link text-light fs-4 fw-bold my-lg-0" href="#menu">Menu</a>
-          <a class="nav-link text-light fs-4 fw-bold"  href="#abuot">abuot</a>
-          <a class="nav-link fs-4 fw-bold text-danger"  href="#Gps">Gps</a>
-          <a class="nav-link  fs-3 fw-bold text-danger"  href="#offer">Offer</a>
-
-        </ul>
+      <div class="containe" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
       </div>
+
+      <ul id="navbar_nav" dir="rtl">
+        <a href="#">
+          <li>Home</li>
+        </a>
+        <a href="#menu">
+          <li>Menu</li>
+        </a>
+        <a href="#abuot">
+          <li>contact</li>
+        </a>
+      </ul>
+
     </div>
   </nav>
 
@@ -40,13 +46,13 @@
 
   <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="100">
+      <div class="carousel-item active" data-bs-interval="1000">
         <img src="imgs/p2.jpg" class="d-block w-100 img_1" />
       </div>
-      <div class="carousel-item" data-bs-interval="100">
+      <div class="carousel-item" data-bs-interval="1000">
         <img src="imgs/p5.jpg" class="d-block w-100 img_1" />
       </div>
-      <div class="carousel-item" data-bs-interval="100">
+      <div class="carousel-item" data-bs-interval="1000">
         <img src="imgs/p6.jpg" class="d-block w-100 img_1" />
       </div>
       <div class="carousel-item">
@@ -57,7 +63,7 @@
 
   <!--   menu  -->
 
-  <h2 id="menu"  class="fs-1 text-danger">menu</h2>
+  <h2 id="menu" class="fs-1 text-danger">menu</h2>
   <div class="row mx-0" style="margin-top: 200px">
     <div class="mnuo col-8 col-sm-6 col-lg-4">
       <img src="imgs/p1.jpg" class="img_2" />
@@ -210,12 +216,11 @@
 
   <!-- sweets -->
   <p class="text-primary fs-1 text-center mt-2">SWEETS</p>
-
   <!--  -->
+
   <div class="row mx-0 sweets">
     <div class="g-5 col-5 col-sm-3">
       <img src="imgs/s1.jpg" class="img_2 ms-2" />
-
       <h3 class="ms-4 fs-5 fw-bold">SWEEE</h3>
       <p class="ms-4 fs-5 text-danger fw-bold">$10</p>
     </div>
@@ -241,6 +246,8 @@
       <p class="ms-4 fs-5 text-danger fw-bold">$22</p>
     </div>
   </div>
+
+
   <!--  -->
   <div class="row mx-0 text-center sweets">
     <div class="g-5 col-5 col-sm-3">
@@ -272,11 +279,12 @@
     </div>
   </div>
 
+
   <!-- offer -->
-  <div id="offer" class="mt-2">
+  <div id="offer">
 
     <div class="offer text-center row mx-0 align-items-center">
-      <p class="fs-1 text-primary fw-bold">Offer Sweets</p>
+      <p class="fs-1 text-primary fw-bold mt-5">Offer Sweets</p>
 
       <div class="col-8 col-sm-4">
         <img src="imgs/s5.jpg" class=" img_5 ">
@@ -296,22 +304,22 @@
     </div>
     <!-- --- abuot ----- -->
 
-    <div id="abuot" class="mt-2 row mx-0  align-items-center" style="background-color: grey; width: 100%;height: auto;">
+    <div id="abuot" class="mt-2 row mx-0  align-items-center" style=" width: 100%;height: auto;">
 
-      <p class="fs-1 text-center fw-bold">abuot My</p>
+      <p class="fs-1 text-center fw-bold">My History</p>
 
       <div class="col-8 col-sm-5 ms-4 ">
         <img src="imgs/logo khafe.jpg" class="img_6">
       </div>
 
       <div class="col-12 col-sm-5  mt-4 ">
-        <p class="fs-5 fs-sm-2 text-cent text-dark fw-bold opacity-75  ms-4 ">
-          Lorem ipsum dolor sit amet consectetur adipisicing
-          ipsam provident totam sint vitae maximeelit. Laborum
-          hic nesciunt asperiores ipsum tenetur vero esse aliquid
-          maiores corporis error consequ atur eius temporibus dolores?
-          hic nesciunt asperiores ipsum tenetur vero esse aliquid
-          maiores corporis error consequatur eius temporibus dolores?
+        <p class="fs-5 fs-sm-2 text-cent text-dark fw-bold opacity-50  ms-4 ">
+          Lorem ipsum dolor sit amet consectetur adipisici
+          ipsam provident totam sint vitae maximeelit.Lab
+          hic nesciunt asperiores ipsum tenetur vero esse
+          maiores corporis error consequ atur eius tempori
+          hic nesciunt asperiores ipsum tenetur vero esse
+          maiores corporis error consequatur eiusdolores?
         </p>
       </div>
 
@@ -320,24 +328,50 @@
 
     <!-- -- -->
     <footer id="Gps" class="d-flex justify-content-around align-items-center row mx-0 mt-2"
-      style="width: 100%;height: auto; background-color: gray;">
+      style="width: 100%;height: auto;">
       <div class="col-12 col-sm-6 ">
         <iframe class=""
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27327.894473977674!2d30.960783764042237!3d31.110098655464387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7ab78f233021f%3A0xc2cdebb004a208f8!2z2YPZgdixINin2YTYtNmK2K7YjCDZgtiz2YUg2YPZgdixINin2YTYtNmK2K7YjCDZg9mB2LEg2KfZhNi02YrYrtiMINmF2K3Yp9mB2LjYqSDYp9mE2LrYsdio2YrYqQ!5e0!3m2!1sar!2seg!4v1704058884125!5m2!1sar!2seg"
-          width="350" height="400" style="margin-top: 50px;"  allowfullscreen="" loading="lazy"
+          width="350" height="400" style="margin-top: 50px; " allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <div class="col-12 col-sm-6 d-flex flex-column mt-5">
         <h3>FOLLOW US</h3>
 
-        <a href="#" class="text-dark"><i class="fs-3 me-4 my-3 text-dark fa-brands fa-facebook-f"></i>facebook11@gmail.com</a>
-        <a href="#" class="text-dark"><i class="fs-3 me-4 my-3 text-dark fa-brands fa-twitter"></i>twitter11@gmail.com</a>
-        <a href="#" class="text-dark"><i class="fs-3 me-4 my-3 text-dark fa-brands fa-instagram"></i>instagram11@gmail.com</a>
+        <a href="#" class="text-dark">
+          <i class="fs-3 me-4 my-3 text-dark fa-brands fa-facebook-f">
+
+          </i>facebook11@gmail.com</a>
+        <a href="#" class="text-dark">
+          <i class="fs-3 me-4 my-3 text-dark fa-brands fa-twitter">
+
+          </i>twitter11@gmail.com</a>
+        <a href="#" class="text-dark">
+          <i class="fs-3 me-4 my-3 text-dark fa-brands fa-instagram">
+
+          </i>instagram11@gmail.com</a>
       </div>
 
     </footer>
+    <i id="up" onclick="upp()" class="fa-solid fa-caret-up"></i>
+    <script>
+      let navbar_nav = document.getElementById("navbar_nav")
+
+      function myFunction(x) {
+        x.classList.toggle("change");
+        navbar_nav.classList.toggle('l')
+      }
+
+      function upp() {
+        window.scroll({
+          top: 0,
+          left: 0,
+          behavior: "smooth",
+        })
+      }
 
 
+    </script>
     <!-- the End   -->
     <!-- الحمدلله -->
 
